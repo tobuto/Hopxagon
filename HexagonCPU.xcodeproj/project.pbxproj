@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		321898161ECF0CEA00A6BD82 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321898151ECF0CE900A6BD82 /* CoreFoundation.framework */; };
+		323290181ECF08E700BFB042 /* HexagonCPU.m in Sources */ = {isa = PBXBuildFile; fileRef = 323290171ECF08E700BFB042 /* HexagonCPU.m */; };
+		32B0B3721EE161AA00DB2916 /* HexagonCtx.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B0B3711EE161AA00DB2916 /* HexagonCtx.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		321898151ECF0CE900A6BD82 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		3232900C1ECEF79800BFB042 /* HexagonCPU.hopperCPU */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexagonCPU.hopperCPU; sourceTree = BUILT_PRODUCTS_DIR; };
+		3232900F1ECEF79800BFB042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323290151ECF081F00BFB042 /* HexagonCPU.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HexagonCPU.h; sourceTree = "<group>"; };
+		323290171ECF08E700BFB042 /* HexagonCPU.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexagonCPU.m; sourceTree = "<group>"; };
+		32B0B3701EE1619C00DB2916 /* HexagonCtx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HexagonCtx.h; sourceTree = "<group>"; };
+		32B0B3711EE161AA00DB2916 /* HexagonCtx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexagonCtx.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		323290091ECEF79800BFB042 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				321898161ECF0CEA00A6BD82 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		321898101ECF0C5800A6BD82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				321898151ECF0CE900A6BD82 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		323290031ECEF79800BFB042 = {
+			isa = PBXGroup;
+			children = (
+				3232900E1ECEF79800BFB042 /* HexagonCPU */,
+				3232900D1ECEF79800BFB042 /* Products */,
+				321898101ECF0C5800A6BD82 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3232900D1ECEF79800BFB042 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3232900C1ECEF79800BFB042 /* HexagonCPU.hopperCPU */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3232900E1ECEF79800BFB042 /* HexagonCPU */ = {
+			isa = PBXGroup;
+			children = (
+				3232900F1ECEF79800BFB042 /* Info.plist */,
+				323290151ECF081F00BFB042 /* HexagonCPU.h */,
+				323290171ECF08E700BFB042 /* HexagonCPU.m */,
+				32B0B3701EE1619C00DB2916 /* HexagonCtx.h */,
+				32B0B3711EE161AA00DB2916 /* HexagonCtx.m */,
+			);
+			path = HexagonCPU;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3232900B1ECEF79800BFB042 /* HexagonCPU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323290121ECEF79800BFB042 /* Build configuration list for PBXNativeTarget "HexagonCPU" */;
+			buildPhases = (
+				323290081ECEF79800BFB042 /* Sources */,
+				323290091ECEF79800BFB042 /* Frameworks */,
+				3232900A1ECEF79800BFB042 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HexagonCPU;
+			productName = HexagonCPU;
+			productReference = 3232900C1ECEF79800BFB042 /* HexagonCPU.hopperCPU */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		323290041ECEF79800BFB042 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Tom Burmeister";
+				TargetAttributes = {
+					3232900B1ECEF79800BFB042 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 323290071ECEF79800BFB042 /* Build configuration list for PBXProject "HexagonCPU" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 323290031ECEF79800BFB042;
+			productRefGroup = 3232900D1ECEF79800BFB042 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3232900B1ECEF79800BFB042 /* HexagonCPU */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3232900A1ECEF79800BFB042 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		323290081ECEF79800BFB042 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B0B3721EE161AA00DB2916 /* HexagonCtx.m in Sources */,
+				323290181ECF08E700BFB042 /* HexagonCPU.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		323290101ECEF79800BFB042 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		323290111ECEF79800BFB042 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		323290131ECEF79800BFB042 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../other/HopperSDK-4.2.9/include\"";
+				INFOPLIST_FILE = HexagonCPU/Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Application Support/Hopper/PlugIns/v4/CPUs";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pany.HexagonCPU;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = hopperCPU;
+			};
+			name = Debug;
+		};
+		323290141ECEF79800BFB042 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../other/HopperSDK-4.2.9/include\"";
+				INFOPLIST_FILE = HexagonCPU/Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Application Support/Hopper/PlugIns/v4/CPUs";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pany.HexagonCPU;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = hopperCPU;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		323290071ECEF79800BFB042 /* Build configuration list for PBXProject "HexagonCPU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323290101ECEF79800BFB042 /* Debug */,
+				323290111ECEF79800BFB042 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		323290121ECEF79800BFB042 /* Build configuration list for PBXNativeTarget "HexagonCPU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323290131ECEF79800BFB042 /* Debug */,
+				323290141ECEF79800BFB042 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 323290041ECEF79800BFB042 /* Project object */;
+}
