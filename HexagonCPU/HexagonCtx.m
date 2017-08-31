@@ -3498,9 +3498,11 @@ uint32_t memory_read_callback(uint32_t address, void* private) {
     }
     
     if((op.type & DISASM_OPERAND_TYPE_MASK) == DISASM_OPERAND_CONSTANT_TYPE) {
-        [line appendCFString:@"#"];
-        if(op.userData[OPU_EXT]) {
+        if(!(mod&mod_branch)) {
             [line appendCFString:@"#"];
+            if(op.userData[OPU_EXT]) {
+                [line appendCFString:@"#"];
+            }
         }
         
         if(op.isBranchDestination) {
@@ -3561,6 +3563,7 @@ uint32_t memory_read_callback(uint32_t address, void* private) {
     if((*userData)[IUD_HIP] == HIP_PKG_START) {
         [line appendMnemonic:@"{"];
     }
+    [line appendSpacesUntil:4];
     
     uint32_t partID = 0;
     uint8_t opIndex = 0;
@@ -3680,6 +3683,7 @@ uint32_t memory_read_callback(uint32_t address, void* private) {
     }
     
     if((*userData)[IUD_HIP] == HIP_PKG_END || (*userData)[IUD_HIP] == HIP_DUPLEX) {
+        [line appendSpaces:3];
         [line appendCFString:@"}"];
     }
     
